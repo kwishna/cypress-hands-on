@@ -1,0 +1,112 @@
+[
+  {
+    "description": "    Cypress With BDD Cucumber Is Cool",
+    "keyword": "Feature",
+    "name": "Learning BDD Cucumber Integration With Cypress",
+    "line": 1,
+    "id": "learning-bdd-cucumber-integration-with-cypress",
+    "tags": [],
+    "uri": "GoogleSearch.feature",
+    "elements": [
+      {
+        "id": "learning-bdd-cucumber-integration-with-cypress;first-cucumber-cypress-integration",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "First Cucumber-Cypress Integration",
+        "tags": [
+          {
+            "name": "@skip",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to https://www.duckduckgo.com",
+            "result": {
+              "status": "passed",
+              "duration": 2696000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter some value in search box",
+            "result": {
+              "status": "passed",
+              "duration": 336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I hit search button",
+            "result": {
+              "status": "passed",
+              "duration": 5041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify search result count",
+            "result": {
+              "status": "passed",
+              "duration": 353000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "learning-bdd-cucumber-integration-with-cypress;second-cucumber-cypress-integration",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Second Cucumber-Cypress Integration",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I navigate to https://www.duckduckgo.com",
+            "result": {
+              "status": "skipped",
+              "duration": 88000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "krishna"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I enter some value using datatable",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

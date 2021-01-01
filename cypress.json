@@ -1,0 +1,7 @@
+{
+  "viewportHeight": 900,
+  "viewportWidth": 1900,
+  "projectId": "sux6nr",
+  "reporter": "mochawesome",
+  "testFiles": "**/*.feature"
+}
