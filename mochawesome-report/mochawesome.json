@@ -2,15 +2,15 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 1,
-    "pending": 1,
+    "passes": 2,
+    "pending": 0,
     "failures": 0,
-    "start": "2020-12-08T22:22:58.088Z",
-    "end": "2020-12-08T22:23:09.920Z",
-    "duration": 11832,
+    "start": "2021-01-29T17:46:08.514Z",
+    "end": "2021-01-29T17:46:24.039Z",
+    "duration": 15525,
     "testsRegistered": 2,
     "passPercent": 100,
-    "pendingPercent": 50,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8a0dd372-1a77-4935-9e31-bca65767f45d",
+      "uuid": "4ee26d97-6b48-464f-9dc6-1d377bd009be",
       "title": "",
       "fullFile": "cypress\\integration\\bdd-integeration\\GoogleSearch\\GoogleSearch.feature",
       "file": "cypress\\integration\\bdd-integeration\\GoogleSearch\\GoogleSearch.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1ff2de6e-ff02-4fca-83f4-56cc08d06817",
+          "uuid": "e740f4b4-38f7-455f-ac2d-b8293194984f",
           "title": "Learning BDD Cucumber Integration With Cypress",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "First Cucumber-Cypress Integration",
               "fullTitle": "Learning BDD Cucumber Integration With Cypress First Cucumber-Cypress Integration",
               "timedOut": null,
-              "duration": 8409,
+              "duration": 11046,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "93839089-1500-4bb8-bcb3-7e3c346361af",
-              "parentUUID": "1ff2de6e-ff02-4fca-83f4-56cc08d06817",
+              "uuid": "7b2e8b8e-0993-467d-b6c1-a59c5b4e551a",
+              "parentUUID": "e740f4b4-38f7-455f-ac2d-b8293194984f",
               "isHook": false,
               "skipped": false
             },
@@ -56,35 +56,30 @@
               "title": "Second Cucumber-Cypress Integration",
               "fullTitle": "Learning BDD Cucumber Integration With Cypress Second Cucumber-Cypress Integration",
               "timedOut": null,
-              "duration": 35,
-              "state": "pending",
-              "speed": null,
-              "pass": false,
+              "duration": 821,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "// register this scenario with the cucumber data collector\n// but don't run it\n// Tell mocha this is a skipped test so it also shows correctly in Cypress\nconst state = window.testState;\ncy.then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => state.onFinishScenario(scenario))\n  // eslint-disable-next-line func-names\n  .then(function () {\n    return this.skip();\n  });",
-              "err": {
-                "message": "CypressError: sync skip; aborting execution",
-                "estack": "[object Object]\nFrom Your Spec Code:\n    at Context.eval (https://duckduckgo.com/__cypress/tests?p=cypress\\integration\\bdd-integeration\\GoogleSearch\\GoogleSearch.feature:12999:10)\nFrom Your Spec Code:\n    at Context.eval (https://duckduckgo.com/__cypress/tests?p=cypress\\integration\\bdd-integeration\\GoogleSearch\\GoogleSearch.feature:12999:10)",
-                "diff": null
-              },
-              "uuid": "70a3c0ef-7867-4c21-88ee-fbad814d60fe",
-              "parentUUID": "1ff2de6e-ff02-4fca-83f4-56cc08d06817",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "bfda45f3-05a7-41d4-b353-0068d2697e5c",
+              "parentUUID": "e740f4b4-38f7-455f-ac2d-b8293194984f",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "93839089-1500-4bb8-bcb3-7e3c346361af"
+            "7b2e8b8e-0993-467d-b6c1-a59c5b4e551a",
+            "bfda45f3-05a7-41d4-b353-0068d2697e5c"
           ],
           "failures": [],
           "pending": [],
-          "skipped": [
-            "70a3c0ef-7867-4c21-88ee-fbad814d60fe"
-          ],
-          "duration": 8444,
+          "skipped": [],
+          "duration": 11867,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

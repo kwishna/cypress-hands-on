@@ -1,26 +1,26 @@
-import {Given, When, Then, Before, After} from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then, Before, After } from "cypress-cucumber-preprocessor/steps";
 
-Before(()=>{
+Before(() => {
   cy.log("Before")
-  cy.fixture('example').then((data)=>
-  global.val = data
+  cy.fixture('example').then((data) =>
+    global.val = data
   )
 })
 
-After(()=>{
+After(() => {
   cy.log("After")
 })
 
-beforeEach(function() {
+beforeEach(function () {
   cy.log("Before Each TC")
 })
 
-afterEach(()=>{
+afterEach(() => {
   cy.log("After Each TC")
 })
 
 Given(/I navigate to (.*)/i, (url) => {
-    cy.visit(url);
+  cy.visit(url);
 });
 
 When(/I enter some value in search box/i, () => {
@@ -28,7 +28,7 @@ When(/I enter some value in search box/i, () => {
   cy.get("[name='q']").type(global.val.name);
 });
 
-When(/I enter some value using datatable/, (dataTable)=> {
+When(/I enter some value using datatable/, (dataTable) => {
   cy.get("[name='q']").type(String(dataTable.rawTable[1]));
 })
 

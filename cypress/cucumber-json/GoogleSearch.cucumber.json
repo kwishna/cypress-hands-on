@@ -28,7 +28,7 @@
             "name": "I navigate to https://www.duckduckgo.com",
             "result": {
               "status": "passed",
-              "duration": 2696000000
+              "duration": 1716000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "I enter some value in search box",
             "result": {
               "status": "passed",
-              "duration": 336000000
+              "duration": 237000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "I hit search button",
             "result": {
               "status": "passed",
-              "duration": 5041000000
+              "duration": 3873000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "I verify search result count",
             "result": {
               "status": "passed",
-              "duration": 353000000
+              "duration": 412000000
             }
           }
         ]
@@ -77,8 +77,8 @@
             "line": 14,
             "name": "I navigate to https://www.duckduckgo.com",
             "result": {
-              "status": "skipped",
-              "duration": 88000000
+              "status": "passed",
+              "duration": 744000000
             }
           },
           {
@@ -102,7 +102,8 @@
             "line": 15,
             "name": "I enter some value using datatable",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 216000000
             }
           }
         ]
